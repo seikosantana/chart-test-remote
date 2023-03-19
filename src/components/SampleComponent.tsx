@@ -2,9 +2,9 @@ import React from "react";
 import { registerables } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
-import ChartJs from "chart.js/auto";
+import Chart from "chart.js/auto";
 
-ChartJs.register(...registerables);
+Chart.register(...registerables);
 
 export interface SampleComponentProps {
   children: React.ReactNode;

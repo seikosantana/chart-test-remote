@@ -5,7 +5,7 @@
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
-const ReactRefreshTypeScript = require('react-refresh-typescript');
+const ReactRefreshTypeScript = require("react-refresh-typescript");
 
 const path = require("path");
 const webpack = require("webpack");
@@ -52,6 +52,9 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       }
     ]
+  },
+  devServer: {
+    allowedHosts: "all"
   },
   devtool: "source-map",
   resolve: {
